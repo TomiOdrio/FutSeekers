@@ -1,50 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Pagina</title>
+    <title>Loopers: Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
 </head>
 <body>
-    <header></header>
-    <main>
-        <h1>Hola Mundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatem dolor reiciendis consequatur quo unde magnam deleniti tenetur! Aperiam ullam eum doloremque, fugit tempora commodi quasi in impedit sapiente animi.</p>
-        <img src="http://via.placeholder.com/500" alt="Agregar x buena practica siempre">
-        <img src="./images/foto_prueba.jfif" alt="Agregar x buena practica siempre">
-        <a href="./contacto.html" target="blank">Contacto</a>
-        <a href="https://google.com" target="_blank"><input type="button" value="no me toques"></a>
-        <ul type="circle">
-            <li>Primero</li>
-            <li>Segundo</li>
-            <li>Tercero</li>
-        </ul>
-        <ol type="I" start="5">
-            <li>Primero</li>
-            <li>Segundo</li>
-            <li>Tercero</li>
-        </ol>
-        <form action="" method="post">
-            <label for="user">
-                Nombre de usuario:
-                <input type="text" placeholder="ingrese usuario" name=user>
-            </label>
-            <label for="contrasenia">
-                Contraseña:
-                <input type="password" placeholder="ingrese contraseña" name=contrasenia>
-            </label>
-            <input type="checkbox" name="check_validation" id="" value="De">
-            <label for="check_validation">De acuerdo</label>
-            <input type="submit" value="Iniciar sesion">
-        </form>
-        <table>
-            <tr><th>Nombre</th><th>Apellido</th></tr>
-            <tr><td>Esteban</td><td>Piazza</td></tr>
-            <tr><td>Tomas</td><td>Odriozola</td></tr>
-            <tr><td>Jorge</td><td></td></tr>
-        </table>
-    </main>
-    <footer></footer>
+    <img src="" alt="" class="logo_pagina">
+    <h1 class="nombre_pagina">Nombre</h1>
+    <button type="button">Hacete fan</button>
+    <ul id="nav">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Mercado</a></li>
+        <li><a href="#">Análisis</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+    <ul id="clubes">
+        <li><a href="#"><img src="" alt="" class="club_img"></a></li>
+        <li><a href="#"><img src="" alt="" class="club_img"></a></li>
+        <li><a href="#"><img src="" alt="" class="club_img"></a></li>
+        <li><a href="#"><img src="" alt="" class="club_img"></a></li>
+        <li><a href="#"><img src="" alt="" class="club_img"></a></li>
+    </ul>
+    <div class="presentacion_club">
+        <img src="" alt="" class="pres_club_img">
+        <h2 class="pres_nombre_club">Liga</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam repellat sit numquam natus magni veritatis culpa dolorum quidem excepturi? Minima, debitis eius voluptate architecto</p>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide ">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <img src="" alt="" id="tabla_posiciones">
+    <h3 class="subtitulo">Goleadores</h3>
+    <ul class="lista">
+        <li>Goleador 1</li>
+        <li>Goleador 2</li>
+    </ul>
+    <h3 class="subtitulo">Asistentes</h3>
+    <ul class="lista">
+        <li>Asistente 1</li>
+        <li>Asistente 2</li>
+    </ul>
+    <h3 class="subtitulo"></h3>
+    <p>Seleccioná un club y mirá más info!</p>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
 </body>
 </html>
