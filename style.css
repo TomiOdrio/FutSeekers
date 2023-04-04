@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+#header_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar{
+    align-items: center;
+    justify-content: space-around;
+    gap: 25%;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    float: left;
+    display: inline;
+}
+
+nav li a{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
