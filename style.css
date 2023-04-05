@@ -1,29 +1,64 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}    
+}
+body{
+    background-color: rgb(155, 230, 155);
+}
 #header_top{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin: 20px 0;
+}
+.logo_pagina{
+    margin: 5px 0;
+}
+#header_top button{
+    padding: 5px;
+    background-color: rgb(61, 147, 61);
 }
 .navbar{
     align-items: center;
     justify-content: space-around;
-    gap: 25%;
 }
-nav ul{
+.navbar ul{
     list-style-type: none;
+    padding: 0;
 }
-nav li{
+.navbar li{
     float: left;
     display: inline;
 }
-
-nav li a{
+.navbar li a{
     display: block;
-    padding: 8px;
+    padding: 0 10px;
     text-decoration: none;
     color: black;
+    cursor: pointer;
+}
+.navbar li a:hover{
+    color: rgb(12, 132, 12);
+    border-bottom: 1px solid green;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subtitulo{
+    text-align: center;
+    margin: 20px 0;
+}
+footer{
+    background-color: rgb(1, 35, 1);
+} 
+#nav_footer li a{
+    color:rgb(12, 132, 12);
+}
+#nav_footer li a:hover{
+    color: rgb(107, 201, 107);
 }
