@@ -1,3 +1,11 @@
-function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 10 + 'px';
+let images=Array.from(document.getElementsByClassName("imgCarousel"))
+let mainPhoto=document.getElementById("mainPhoto")
+
+function updateImage(event){
+    let image=event.target
+    mainPhoto.src=image.src
 }
+
+images.forEach(function(image){
+    image.addEventListener("click",updateImage)
+})
