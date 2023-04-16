@@ -6,53 +6,125 @@
 body{
     background-color: rgb(155, 230, 155);
 }
-#header_top{
+.columna{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    margin: 20px 0;
 }
-.logo_pagina{
-    margin: 5px 0;
-}
-#header_top button{
-    padding: 5px;
-    background-color: rgb(61, 147, 61);
-}
-.navbar{
-    align-items: center;
-    justify-content: space-around;
-}
-.navbar ul{
-    list-style-type: none;
-    padding: 0;
-}
-.navbar li{
-    float: left;
-    display: inline;
-}
-.navbar li a{
-    display: block;
-    padding: 0 10px;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-}
-.navbar li a:hover{
-    color: rgb(12, 132, 12);
-    border-bottom: 1px solid green;
-}
-.contenedor{
+.fila{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .subtitulo{
     text-align: center;
     margin: 20px 0;
 }
+.oculto{
+    display: none;
+}
+.mostrar{
+    display: block;
+}
+
+/* HEADER */
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    background-color: rgb(1, 75, 23);
+}
+header > div{
+    justify-content: space-around;
+}
+#info_pagina{
+    display: flex;
+    align-items: center;
+}
+#logo_pagina{
+    margin: 5px;
+    width: 7vw;
+}
+#nombre_pagina{
+    font-size: 4vw;
+}
+.menu{
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 189, 55);
+    border-radius: 50%;
+    width: 5%;
+    height: 5%;
+    border: 0.1px solid black;
+    cursor: pointer;
+}
+.nav{
+    justify-content: space-around;
+}
+.nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: auto 0;
+}
+.nav li a{
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.nav_horiz li{
+    float: left;
+    display: inline;
+}
+.nav_vert li{
+    float: center;
+    display: block;
+}
+.nav_horiz li a:hover, .nav_vert li a:hover{
+    color: rgb(12, 132, 12);
+    border-bottom: 1px solid green;
+}
+
+/* MAIN */
+main{
+    margin-top: 5%;
+}
+#clubes{
+    position: fixed;
+    width: 100%;
+    top: 80px;
+    background-color: rgb(18, 142, 55);
+}
+#presentacion_club{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+#presentacion_club .fila{
+    justify-content: center;
+}
+#pres_club_img{
+    width: 30%;
+}
+#pres_club_nombre{
+    margin: 0;
+    width: 50%;
+    font-size: 3vw;
+}
+.tablas .fila{
+    justify-content: space-around;
+}
+
+/* FOOTER */
+
 footer{
     background-color: rgb(1, 35, 1);
 } 

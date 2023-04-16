@@ -13,12 +13,39 @@
 </head>
 <body>
     <header>
-        <div id="header_top">
-            <img src="http://placekitten.com/70/70" alt="Imagen logo de la página" class="logo_pagina">
-            <h1 class="nombre_pagina">Nombre</h1>
-            <button type="button">Hacete fan</button>
+        <div class="fila">
+            <div id="info_pagina">
+                <img src="http://placekitten.com/70/70" alt="Imagen logo de la página" id="logo_pagina">
+                <h1 id="nombre_pagina">Nombre</h1>
+            </div>
+            <nav class="nav nav_horiz oculto">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Mercado</a></li>
+                    <li><a href="#">Análisis</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <button type="button" id="boton">Hacete Fan</button>
         </div>
-        <nav class="navbar">
+        <div class="fila">
+            <div id="clubes" class="oculto">
+                <nav class="nav nav_horiz">
+                    <ul>
+                        <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
+                        <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
+                        <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
+                        <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
+                        <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu">
+        <i class="fa-solid fa-bars" id="menu_bars"></i>
+        <nav class="nav nav_vert oculto">
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Mercado</a></li>
@@ -26,72 +53,46 @@
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
-                <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
-                <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
-                <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
-                <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
-            </ul>
-        </nav>
-    </header>
+    </div>
+
     <main>
-        <div class="presentacion_club">
-            <img src="" alt="" class="pres_club_img">
-            <h2 class="pres_nombre_club">Liga</h2>
+        <div id="presentacion_club">
+            <div class="fila">
+                <img src="./images/logo_afa.png" alt="logo de AFA" id="pres_club_img">
+                <h2 id="pres_club_nombre">Asociación del Fútbol Argentino</h2>
+            </div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam repellat sit numquam natus magni veritatis</p>
         </div>
-        <div id="carouselExampleIndicators" class="carousel slide ">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="http://placekitten.com/1000/1000" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="http://placekitten.com/850/850" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="http://placekitten.com/700/700" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <div class="fila" id="competiciones">
+            <a href="./images/cruces_copa_arg.webp" target="tabla_posiciones"><img src="./images/logo_copa_arg.png" alt=""></a>
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTr8f8T2uITuOla3qczn3MrIEEKuqdY_UNS6WjP5G6ZpGNQ89HVe7zzay1eRoucGchHrM9fZrfBp9QE/pubhtml?gid=1955914743&amp,single=true&amp,widget=true&amp,headers=false" target="tabla_posiciones"><img src="./images/logo_liga.png" alt=""></a>
         </div>
-        <h3 class="subtitulo">Tabla Posiciones</h3>
-        <img src="http://placekitten.com/200/350" alt="" id="tabla_posiciones">
-        <div class="contenedor">
-            <div class="col">
-                <h3 class="subtitulo">Goleadores</h3>
-                <ul class="lista">
-                    <li>Goleador 1</li>
-                    <li>Goleador 2</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h3 class="subtitulo">Asistentes</h3>
-                <ul class="lista">
-                    <li>Asistente 1</li>
-                    <li>Asistente 2</li>
-                </ul>
+        <div class="tablas">
+            <h3 class="subtitulo">Tabla Posiciones</h3>
+            <iframe src='https://docs.google.com/spreadsheets/d/e/2PACX-1vTr8f8T2uITuOla3qczn3MrIEEKuqdY_UNS6WjP5G6ZpGNQ89HVe7zzay1eRoucGchHrM9fZrfBp9QE/pubhtml?gid=1955914743&amp,single=true&amp,widget=true&amp,headers=false' id="tabla_posiciones" name="tabla_posiciones" title="Clasificación" scrolling="no"></iframe>
+            <div class="fila">
+                <div class="columna">
+                    <h3 class="subtitulo">Goleadores</h3>
+                    <ul class="lista">
+                        <li>Goleador 1</li>
+                        <li>Goleador 2</li>
+                    </ul>
+                </div>
+                <div class="columna">
+                    <h3 class="subtitulo">Asistentes</h3>
+                    <ul class="lista">
+                        <li>Asistente 1</li>
+                        <li>Asistente 2</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <p id="pie">Seleccioná un club y mirá más info!</p>
     </main>
     <footer>
-        <div class="contenedor">
-            <img src="http://placekitten.com/70/70" alt="Imagen logo de la página" class="logo_pagina">
-            <ul class="navbar" id="nav_footer">
+        <div class="columna">
+            <img src="http://placekitten.com/70/70" alt="Imagen logo de la página" id="logo_pagina">
+            <ul class="nav" id="nav_footer">
                 <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
                 <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
@@ -100,6 +101,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
+    <script src="./function.js"></script>
 </body>
 </html>
