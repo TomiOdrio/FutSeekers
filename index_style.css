@@ -1,28 +1,4 @@
-.carousel{
-    width: 60%;
-    margin: auto;
-}
-#competiciones{
-    justify-content: center;
-}
-#competiciones a{
-    width: 10%;
-}
-#competiciones img{
-    width: 100%;
-}
-#competiciones a:hover{
-    transform: scale(1.5);
-}
-#competiciones:hover :not(:hover){
-    opacity: 0.4;
-}
-iframe{
-    display: block;
-    zoom: 2;
-    width: 56%;
-    margin: 0 auto;
-}
+
 .lista{
     width: 100%;
     padding: 0;
@@ -32,11 +8,6 @@ iframe{
 .lista li{
     margin: auto;
 }
-#pie{
-    width: 90%;
-    text-align: center;
-    margin: 20px auto;
-}
 
 .wrapper{
     display: flex;
@@ -45,7 +16,7 @@ iframe{
     align-items: center;
 }
 #mainPhoto{
-    width: 20vw;
+    width: 15%;
     margin-bottom: 10px;
 }
 .imgCarousel{
@@ -60,4 +31,15 @@ iframe{
 .imgCarousel:hover{
     width: 15vw;
     border: 2px solid rgb(39, 90, 21);
+}
+iframe{
+    display: block;
+    zoom: 2;
+    width: 56%;
+    margin: 0 auto;
+}
+#pie{
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
 }

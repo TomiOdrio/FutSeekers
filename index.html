@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <div class="fila">
+        <div class="contenedor" id="contHeader">
             <div id="info_pagina">
                 <img src="http://placekitten.com/70/70" alt="Imagen logo de la página" id="logo_pagina">
                 <h1 id="nombre_pagina">Nombre</h1>
@@ -28,46 +28,42 @@
             </nav>
             <button type="button" id="boton">Hacete Fan</button>
         </div>
-        <div class="fila">
-            <div id="clubes" class="oculto">
-                <nav class="nav nav_horiz">
-                    <ul>
-                        <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
-                        <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
-                        <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
-                        <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
-                        <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div id="clubes" class="contenedor oculto">
+            <nav class="nav nav_horiz">
+                <ul>
+                    <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
+                    <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
+                    <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
+                    <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
+                    <li><a href="#"><img src="http://placekitten.com/20/20" alt="" class="club_img"></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu">
+            <i class="fa-solid fa-bars" id="menu_bars"></i>
+            <nav class="nav nav_vert oculto">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Mercado</a></li>
+                    <li><a href="#">Análisis</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <div class="menu">
-        <i class="fa-solid fa-bars" id="menu_bars"></i>
-        <nav class="nav nav_vert oculto">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Mercado</a></li>
-                <li><a href="#">Análisis</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-
     <main>
         <div id="presentacion_club">
-            <div class="fila">
-                <img src="./images/logo_afa.png" alt="logo de AFA" id="pres_club_img">
-                <h2 id="pres_club_nombre">Asociación del Fútbol Argentino</h2>
-            </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam repellat sit numquam natus magni veritatis</p>
+            <img src="./images/logo_afa.png" alt="logo de AFA" id="pres_club_img">
+            <h2 id="pres_club_nombre">Asociación del Fútbol Argentino</h2>
+            <p id="pres_club_desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam repellat sit numquam natus magni veritatis</p>
         </div>
         
         <div class="wrapper">
             <img src="./images/logo_liga.png" alt="" id="mainPhoto">
             <div class="image-wrapper">
-                <span class="imgContainer" ><a href="./images/cruces_copa_arg.webp" target="tabla_posiciones"><img src="./images/logo_copa_arg.png" alt="" class="imgCarousel"></a></span>
+                <span class="imgContainer"><a href="./images/cruces_copa_arg.webp" target="tabla_posiciones"><img src="./images/logo_copa_arg.png" alt="" class="imgCarousel"></a></span>
                 <span class="imgContainer"><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTr8f8T2uITuOla3qczn3MrIEEKuqdY_UNS6WjP5G6ZpGNQ89HVe7zzay1eRoucGchHrM9fZrfBp9QE/pubhtml?gid=1955914743&amp,single=true&amp,widget=true&amp,headers=false" target="tabla_posiciones"><img src="./images/logo_liga.png" alt="" class="imgCarousel"></a></span>
             </div>
         </div>
@@ -75,21 +71,12 @@
         <div class="tablas">
             <h3 class="subtitulo">Tabla Posiciones</h3>
             <iframe src='https://docs.google.com/spreadsheets/d/e/2PACX-1vTr8f8T2uITuOla3qczn3MrIEEKuqdY_UNS6WjP5G6ZpGNQ89HVe7zzay1eRoucGchHrM9fZrfBp9QE/pubhtml?gid=1955914743&amp,single=true&amp,widget=true&amp,headers=false' id="tabla_posiciones" name="tabla_posiciones" title="Clasificación" scrolling="no"></iframe>
-            <!-- <div class="fila">
-                <div class="columna">
-                    <h3 class="subtitulo">Goleadores</h3>
-                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTr8f8T2uITuOla3qczn3MrIEEKuqdY_UNS6WjP5G6ZpGNQ89HVe7zzay1eRoucGchHrM9fZrfBp9QE/pubhtml?gid=1960706878&amp,single=true&amp,widget=true&amp,headers=false" id="tabla2" name="tabla_goleadores" title="Goleadores" scrolling="no"></iframe>
-                </div>
-                <div class="columna">
-                    <h3 class="subtitulo">Asistentes</h3>
-                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTr8f8T2uITuOla3qczn3MrIEEKuqdY_UNS6WjP5G6ZpGNQ89HVe7zzay1eRoucGchHrM9fZrfBp9QE/pubhtml?gid=1321850598&amp,single=true&amp,widget=true&amp,headers=false" id="tabla2" name="tabla_asistentes" title="Asistentes" scrolling="no"></iframe>
-                </div>
-            </div> -->
         </div>
         <p id="pie">Seleccioná un club y mirá más info!</p>
     </main>
+
     <footer>
-        <div class="columna">
+        <div class="contenedor" id="contFooter">
             <img src="http://placekitten.com/70/70" alt="Imagen logo de la página" id="logo_pagina">
             <ul class="nav" id="nav_footer">
                 <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
