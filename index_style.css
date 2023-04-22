@@ -1,24 +1,84 @@
-
-.lista{
-    width: 100%;
-    padding: 0;
-    text-align: center;
-    list-style-type: none;
+.selector_pais{
+    display: block;
+    margin: 5vw auto;
+    padding: 0 2vw;
+    border-radius: 15px;
+    border: 0;
+    font-size: 3vw;
 }
-.lista li{
-    margin: auto;
+
+.cont_ppal{
+    position: sticky;
+    top: 6vh;
+    width: 100%;
+    background-color: rgb(52, 49, 49);
+    display: flex;
+    align-items: center;
+    margin: 10vw 0;
+}
+.cont_scroll_club{
+    display: flex;
+    scroll-snap-type:x mandatory;
+    overflow-x:scroll;
+    width: 89%;
+    margin: 0 auto;
+    padding: 1vw 0;
+}
+.scroll_club img{
+    scroll-snap-align: center;
+    margin: 1vw 0.8vw;
+    width: 10.5vw;
+    transition: 0.1s;
+}
+.scroll_club img:hover{
+    transform:scale(1.2)
+}
+.cont_scroll_club::-webkit-scrollbar{
+    height:3px;
+}
+.cont_scroll_club::-webkit-scrollbar-track{
+    background: rgb(52, 49, 49);
+}
+.cont_scroll_club::-webkit-scrollbar-thumb{
+    background:green;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.contenedor h2{
+    font-size: 5vw;
+}
+.arrow_down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    border-radius: 50%;
+    border: 0.1px solid black;
+    width: 6vw;
+    height: 6vw;
 }
 
 .wrapper{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10vw 0;
+}
+.wrapper h2{
+    width: 40%;
 }
 #mainPhoto{
-    width: 15%;
+    width: 20%;
     margin-bottom: 10px;
+    margin-right: 3vw;
     filter: drop-shadow(0px 8px 15px black);
+    z-index: -1;
+
 }
 .imgCarousel{
     width: 10vw;
@@ -28,7 +88,6 @@
     object-fit: contain;
     padding: 3px;
     cursor: pointer;
-    border-radius: 10px;
     background-color: antiquewhite;
     border-radius: 15px 0 15px 0;
     box-shadow: 3vw 3vw 0 0 rgba(0,0,0,0.4);
@@ -38,15 +97,22 @@
     width: 15vw;
     border: 2px solid rgb(39, 90, 21);
 }
+
+#tabla_copa{
+    width: 100%;
+}
+
 iframe{
     display: block;
-    zoom: 2;
+    /* zoom: 2; */
     width: 100%;
+    height: 50vh;
     margin: 0 auto;
 }
+
 #pie{
     width: 90%;
-    font-size: 3vw;
+    font-size: 4vw;
     text-align: center;
     margin: 20px auto;
 }

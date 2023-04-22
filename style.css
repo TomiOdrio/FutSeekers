@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(155, 230, 155);
+    background: linear-gradient(245.59deg, #5db16b 0%, #38703d 40%, #18511d 60%);
 }
 .contenedor{
     display: flex;
@@ -14,32 +14,15 @@ body{
     font-size: 5vw;
     margin: 20px 0;
 }
-.nav{
-    justify-content: space-around;
+::-webkit-scrollbar{
+    width:6px;
 }
-.nav ul{
-    list-style-type: none;
-    padding: 0;
-    margin: auto 0;
+::-webkit-scrollbar-track{
+    background: rgb(171, 171, 171);
 }
-.nav li a{
-    display: block;
-    padding: 0 10px;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-}
-.nav_horiz li{
-    float: left;
-    display: inline;
-}
-.nav_vert li{
-    float: center;
-    display: block;
-}
-.nav_horiz li a:hover, .nav_vert li a:hover{
-    color: rgb(12, 132, 12);
-    border-bottom: 1px solid green;
+::-webkit-scrollbar-thumb{
+    background:rgb(7, 76, 7);
+    border-radius:15px;
 }
 .oculto{
     display: none;
@@ -55,143 +38,181 @@ header{
     top: 0;
     z-index: 1;
     width: 100%;
-    background-color: rgb(1, 75, 23);
+    background-color: rgb(52, 49, 49);
+    border-bottom: 0.1px solid black;
 }
-#contHeader{
+.cont_header{
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
-#info_pagina{
+.header_info_pagina,.footer_info_pagina{
     display: flex;
     align-items: center;
 }
-#logo_pagina{
+.logo{
     margin: 1vw;
     width: 7vw;
 }
-#nombre_pagina{
+.titulo_pagina{
     font-size: 4vw;
     color: rgb(103, 180, 106);
+    margin: 0;
 }
-#boton{
-    font-size: 3vw;
-    background-color: rgb(105, 207, 80);
-    padding: 1vw;
-    border-radius: 5vw;
-    border: 0;
+.header_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.cont_buttons{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header_button{
+    display:inline;
+}
+.header_button i{
+    color: rgb(103, 180, 106);
+    transition: 0.1s;
+    margin: 0.5vw;
+}
+.header_button i:hover{
+    transform: scale(1.2);
+    color: rgb(60, 125, 63);
+}
+
+
+#borroso{
+    position: absolute;
+    top:0;
+    width:100vw;
+    height:100vh;
+    z-index: 3;
+    backdrop-filter: blur(2px);
 }
 #suscripcion{
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(17, 116, 43);
-    z-index: 2;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 85vw;
+    border: 0.1px solid black;
+    background: linear-gradient(245.59deg, #5db16b 0%, #38703d 40%, #18511d 60%);
+}
+.cross_icon{
+    margin: 0 2vw;
+    text-align: end;
+}
+.cross_icon i{
+    cursor: pointer;
 }
 #suscripcion form{
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#menu{
-    position: fixed;
-    top: 9vw;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(80, 189, 55);
-    border-radius: 50%;
-    width: 6vw;
-    height: 6vw;
-    border: 0.1px solid black;
-    cursor: pointer;
+#suscripcion .subtitulo{
+    width:90%;
+    margin: 3vw auto;
+}
+.form_input{
+    margin: 1vw 0;
     font-size: 3vw;
 }
-#menu_active{
-    position: absolute;
-    top: 2.8vw;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(17, 116, 43);
+#suscripcion span{
+    display: flex;
+    align-items:center;
+    margin: 2vw 0;
+    font-size: 3vw;
 }
-#menu_active nav{
-    margin-top: 3vw;
-    width: 100%;
-    text-align: center;
+#check{
+    margin-right: 1vw;
 }
-#menu_active nav ul{
-    width: 100%;
+.form_submit{
+    margin: 3vw 0;
+    font-size: 3vw;
+    border: 0;
+    border-radius: 15px;
+    background-color: rgb(52, 49, 49);
+    padding: 0.5vw 2vw;
+    color: white;
 }
-#menu_active nav li{
-    display: block;
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 3vw;
-    border-bottom: 3px solid rgb(2, 52, 2,0.6);
-    border-radius: 0 0 15px 15px;
-}
-#menu_active nav li a{
-    width: 100%;
-    height: 100%;
-}
-.clubes_cel{
-    display: grid;
-    justify-content: space-evenly;
-    margin-top: 5vw;
-    gap: 2vw;
-    grid-template-columns: auto auto auto auto auto auto auto;
-}
-#clubes{
-    position: fixed;
-    width: 100%;
-    top: 9vw;
-    background-color: rgb(18, 142, 55);
-}
-
 
 /* MAIN */
 
 main{
     margin-top: 5%;
 }
-#presentacion_club{
+.cont_club{
+    width: 50%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     margin: auto;
+    padding: 2vw .5vw;
+    background-color: rgb(52, 49, 49);
+    color: white;
+    border-radius: 15px 0 15px 0;
+    box-shadow: 3vw 3vw 0 0 rgba(0,0,0,0.4);
 }
-#pres_club_img{
+.club_img{
     width: 30%;
-    max-width: 10vw;
+    max-width: 12vw;
+    margin-right:1vw;
 }
-#pres_club_nombre{
-    width: 30%;
+.club_nombre{
     font-size: 3vw;
 }
-#pres_club_desc{
-    width: 40%;
+.club_desc{
     font-size: 2vw;
+    margin: 0;
 }
 
 /* FOOTER */
 
-#contFooter{
-    flex-direction: column;
-    justify-content: center;
+footer{
+    background-color: rgb(52, 49, 49);
+} 
+.cont_footer{
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
-footer{
-    background-color: rgb(1, 35, 1);
-} 
-#nav_footer li a{
+.footer_info_pagina,.footer_creador,.footer_actualiz{
+    text-align: center;
+    font-size: 2.5vw;
+    width: 20%;
+    color: rgb(103, 180, 106);
+    margin: 2vw 0;
+}
+.footer_creador a{
+    text-decoration: none;
+    color: rgb(103, 180, 106);
+    transition: 0.1s;
+}
+.footer_creador a:hover{
+    color: rgb(60, 125, 63);
+}
+.footer_redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+}
+.footer_redes li{
+    display: inline;
+    margin:0 2vw 1vw;
+}
+.footer_redes li a{
     color:rgb(12, 132, 12);
 }
-#nav_footer li a:hover{
+.footer_redes li a:hover{
     color: rgb(107, 201, 107);
 }
