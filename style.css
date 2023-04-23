@@ -82,8 +82,6 @@ header{
     transform: scale(1.2);
     color: rgb(60, 125, 63);
 }
-
-
 #borroso{
     position: absolute;
     top:0;
@@ -185,7 +183,7 @@ footer{
 }
 .footer_info_pagina,.footer_creador,.footer_actualiz{
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 3vw;
     width: 20%;
     color: rgb(103, 180, 106);
     margin: 2vw 0;
