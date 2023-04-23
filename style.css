@@ -51,11 +51,11 @@ header{
     align-items: center;
 }
 .logo{
-    margin: 1vw;
-    width: 7vw;
+    margin: 1.5vw;
+    width: 8vw;
 }
 .titulo_pagina{
-    font-size: 4vw;
+    font-size: 5vw;
     color: rgb(103, 180, 106);
     margin: 0;
 }
