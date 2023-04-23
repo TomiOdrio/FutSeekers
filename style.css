@@ -64,6 +64,7 @@ header{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-size: 4vw;
 }
 .cont_buttons{
     list-style: none;
@@ -160,7 +161,7 @@ main{
 }
 .club_img{
     width: 30%;
-    max-width: 12vw;
+    max-width: 8vw;
     margin-right:1vw;
 }
 .club_nombre{
@@ -188,6 +189,9 @@ footer{
     color: rgb(103, 180, 106);
     margin: 2vw 0;
 }
+.footer_info_pagina .titulo_pagina{
+    font-size:3.5vw;
+}
 .footer_creador a{
     text-decoration: none;
     color: rgb(103, 180, 106);
@@ -213,4 +217,40 @@ footer{
 }
 .footer_redes li a:hover{
     color: rgb(107, 201, 107);
+}
+
+@media(min-width:600px){
+    .logo{
+        margin: 0.5vw;
+        width: 4vw;
+    }
+    .titulo_pagina{
+        font-size: 3vw;
+    }
+    .header_buttons{
+        font-size: 2.5vw;
+    }
+    .cont_club{
+        width: 20vw;
+    }
+    .club_nombre{
+        font-size: 1.5vw;
+    }
+    .club_desc{
+        font-size: 1vw;
+    }
+    .subtitulo{
+        font-size: 2vw;
+    }
+    .footer_info_pagina,.footer_creador,.footer_actualiz{
+        font-size: 1vw;
+        margin: 0vw 0;
+    }
+    .footer_info_pagina .titulo_pagina{
+        font-size:1.5vw;
+    }
+    .footer_redes li{
+        margin:0 1vw 1vw;
+        font-size: 2vw;
+    }
 }
