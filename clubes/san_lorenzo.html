@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutSeekers: San Lorenzo</title>
+    <script src="https://kit.fontawesome.com/caed79763d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../clubes.css">
+</head>
+<body>
+    <header>
+        <div class="cont_header">
+            <div class="header_info_pagina">
+                <img src="http://placekitten.com/70/70" alt="Logo Seekers" class="logo">
+                <h1 class="titulo_pagina">Seekers</h1>
+            </div>
+            <div class="header_buttons">
+                <ul class="cont_buttons">
+                    <li class="header_button"><a href="../index.html"><i class="fa-solid fa-home"></i><span class="btn_text">Inicio</span></a></li>
+                    <li class="header_button"><a href="../contacto.html"><i class="fa-solid fa-phone"></i><span class="btn_text">Contacto</span></a></li>
+                    <li class="header_button" id="btn_suscripcion"><i class="fa-solid fa-star"></i><span class="btn_text">Hacete Fan</span></li>
+                    <li class="header_button"><a href="#"><i class="fa-solid fa-shield"></i></a></li>
+                </ul>
+            </div>
+
+            <div id="borroso" class="oculto">
+                <div id="suscripcion" class="">
+                    <div class="cross_icon"><i class="fa fa-times" aria-hidden="true" id="cross"></i></div>
+                    <h2 class="subtitulo">Hacete fan y se el primero en enterarte de la info de tu club favorito!</h2>
+                    <form action="" method="post">
+                        <input type="text" class="form_input" id="nombre" name="nombre" placeholder="Nombre">
+                        <input type="email" class="form_input" id="email" name="email" placeholder="Email">
+                        <input list="paises" class="form_input" placeholder="Seleccioná un país"/>
+                        <input list="clubes" class="form_input" placeholder="Club Favorito"/>
+                        <datalist id="clubes">
+                            <option value="Argentinos Juniors"></option>
+                            <option value="Arsenal"></option>
+                            <option value="Atlético Tucumán"></option>
+                        </datalist>
+                        <span><input type="checkbox" name="check" class="form_input" id="check">Recibir Notificaciones</span>
+                        <input type="submit" value="Submit" class="form_submit" id="submit_btn">
+                    </form> 
+                </div>
+            </div>  
+        </div>
+    </header>
+    
+    <main>
+
+        <div class="cont_club" id="marco">
+            <img src="https://www.ole.com.ar/img/escudos/futbolPrimera/san_lorenzo.svg" alt="San Lorenzo" class="club_img" id="imagen_club">
+            <div class="cuerpo_club">
+                <h2 class="club_nombre">C.A. San Lorenzo de Almagro</h2>
+                <p class="club_desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam repellat sit numquam natus magni veritatis</p>
+            </div>
+        </div>
+
+        <div class="cont_selector_modelos">
+            <div class="zona_campo">
+                <img src="../images/cancha.png" alt="Zonas" class="zonas_img">
+                <div class="cont_zonas">
+                    <div class="zona"></div>
+                    <div class="zona"></div>
+                    <div class="zona"></div>
+                </div>
+            </div>
+        </div>
+        
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="../function.js"></script>
+
+</body>
+</html>
