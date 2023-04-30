@@ -1,3 +1,37 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10vw 0;
+}
+.wrapper h2{
+    width: 40%;
+}
+#mainPhoto{
+    width: 20%;
+    max-width: 15vw;
+    margin-bottom: 10px;
+    z-index: -1;
+}
+.imgCarousel{
+    width: 12vw;
+    min-width: 20%;
+    transition: 0.3s;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    padding: 3px;
+    cursor: pointer;
+    background-color: antiquewhite;
+    border-radius: 15px 0 15px 0;
+    box-shadow: 3vw 3vw 0 0 rgba(0,0,0,0.4);
+    margin-bottom: 2vw;
+}
+.imgCarousel:hover{
+    width: 15vw;
+    border: 2px solid rgb(39, 90, 21);
+}
+
 .cont_selector_modelos{
     display: flex;
     justify-content: space-evenly;
@@ -33,4 +67,25 @@
 }
 .cont_zonas:hover > :not(:hover){
     opacity: 0.4;
+}
+
+@media(min-width:600px){
+    .wrapper{
+        margin: 6vw 0;
+        flex-direction: row;
+    }
+    #mainPhoto{
+        max-width: 10vw;
+        margin-right: 2vw;
+    }
+    .imgCarousel{
+        width: 5vw;
+        box-shadow: 1vw 1vw 0 0 rgba(0,0,0,0.4);
+    }
+    .imgCarousel:hover{
+        width: 7vw;
+    }
+    .zona_campo{
+        width: 10%;
+    }
 }

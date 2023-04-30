@@ -67,12 +67,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 .cont_buttons{
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 28vw;
 }
 .header_button{
     display:inline;
@@ -84,6 +84,18 @@ header{
     color:rgb(12, 132, 12);
     margin: 0.5vw;
     transition: 0.1s;
+    cursor: pointer;
+}
+#versus{
+    width: 18%;
+    filter: brightness(0.55);
+    transition: 0.1s;
+    margin: 0.5vw;
+}
+.header_button:hover #versus{
+    filter: brightness(0.55);
+    filter: contrast(0.4);
+    transform: scale(1.2);
 }
 .btn_text{
     color:rgb(101, 154, 101);
@@ -241,6 +253,7 @@ footer{
 }
 .footer_info_pagina .titulo_pagina{
     font-size:3.5vw;
+    color: rgb(103, 180, 106);
 }
 .footer_creador a{
     text-decoration: none;
@@ -280,8 +293,14 @@ footer{
     .header_buttons{
         font-size: 2.5vw;
     }
+    .cont_buttons{
+        width: 38vw;
+    }
     .header_button{
         font-size: 1.5vw;
+    }
+    #versus{
+        width: 2vw;
     }
     .btn_text{
         display: inline;
