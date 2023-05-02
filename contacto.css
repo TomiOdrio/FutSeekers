@@ -1,0 +1,16 @@
+.form_contacto form{
+    width: 90%;
+    max-width: 40vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form_contacto textarea{
+    max-height: 10vw;
+    min-height: 5vw;
+}
+#form_alert{
+    margin: 2vw auto;
+}

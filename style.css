@@ -146,6 +146,7 @@ header{
 .form_input{
     margin: 1vw 0;
     font-size: 3vw;
+    width: 60%;
 }
 #suscripcion span{
     display: flex;
