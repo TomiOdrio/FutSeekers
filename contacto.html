@@ -32,10 +32,10 @@
                     <div class="cross_icon"><i class="fa fa-times" aria-hidden="true" id="cross"></i></div>
                     <h2 class="subtitulo">Hacete fan y se el primero en enterarte de la info de tu club favorito!</h2>
                     <form action="" method="post">
-                        <input type="text" class="form_input" id="nombre" name="nombre" placeholder="Nombre">
-                        <input type="email" class="form_input" id="email" name="email" placeholder="Email">
-                        <input list="paises" class="form_input" placeholder="Seleccioná un país"/>
-                        <input list="clubes" class="form_input" placeholder="Club Favorito"/>
+                        <input type="text" class="form_input" id="nombre" name="nombre" placeholder="Nombre" required>
+                        <input type="email" class="form_input" id="email" name="email" placeholder="Email" required>
+                        <input list="paises" class="form_input" placeholder="Seleccioná un país" required/>
+                        <input list="clubes" class="form_input" placeholder="Club Favorito" required/>
                         <datalist id="clubes">
                             <option value="Argentinos Juniors"></option>
                             <option value="Arsenal"></option>
@@ -50,13 +50,16 @@
     </header>
 
     <main>
-        <div class="form_contacto">
+        <div action="https://formsubmit.co/toodriozola@gmail.com" method="POST" class="form_contacto">
             <h2 class="subtitulo">O completá con tus datos y enviá un mail con tu consulta!</h2>
-            <form action="" method="post">
-                <input type="text" class="form_input" name="nombre" placeholder="Nombre">
-                <input type="email" class="form_input" name="email" placeholder="Email">
-                <textarea name="mensaje" class="form_input" placeholder="Ingresá tu Mensaje"></textarea>
+            <form action="https://formsubmit.co/toodriozola@gmail.com" method="post">
+                <input type="text" class="form_input" name="nombre" placeholder="Nombre" required>
+                <input type="email" class="form_input" name="email" placeholder="Email" required>
+                <textarea name="mensaje" class="form_input" placeholder="Ingresá tu Mensaje" required></textarea>
                 <input type="submit" value="Submit" class="form_submit" id="submit_contacto">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
             </form> 
 
             <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" id="form_alert">

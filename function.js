@@ -65,16 +65,3 @@ window.addEventListener('scroll', function()  {
         element.style.display="none";
       }
   });
-
-//   Activar alerta formulario contacto
-var submit_btn=document.getElementById("submit_contacto");
-var toast=document.getElementById("form_alert");
-
-// Inicializar el elemento Toast
-var myToast = new bootstrap.Toast(toast);
-
-// Agregar un evento click al botón
-submit_btn.addEventListener('click', function(event) {
-    event.preventDefault();
-    myToast.show();
-});
