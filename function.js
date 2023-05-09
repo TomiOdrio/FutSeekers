@@ -75,6 +75,6 @@ var myToast = new bootstrap.Toast(toast);
 
 // Agregar un evento click al botón
 submit_btn.addEventListener('click', function(event) {
-    event.preventDefault()
+    event.preventDefault();
     myToast.show();
 });
