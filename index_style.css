@@ -17,17 +17,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-color: rgb(74, 139, 43);
     border-radius: 50%;
     border: 0.1px solid black;
     width: 6vw;
     height: 6vw;
 }
-iframe{
+#tabla_posiciones{
     display: block;
-    width: 100%;
+    width: 65%;
     height: 50vh;
     margin: 20px auto;
+    padding: 0;
+}
+.tablas_jug{
+    display: flex;
+    justify-content: center;
+}
+#goleadores,#asistentes{
+    width: 41%;
 }
 
 #pie{
@@ -36,6 +44,15 @@ iframe{
     text-align: center;
     margin: 20px auto;
     color:rgb(0, 0, 0);
+}
+#pie > a{
+    text-decoration: none;
+    color: rgb(38, 146, 17);
+    transition: 0.1s;
+}
+#pie > a:hover{
+    font-size: 6vw;
+    border-bottom: 2px solid black;
 }
 
 
@@ -48,10 +65,17 @@ iframe{
         width: 2vw;
         height: 2vw;
     }
-    iframe{
-        width:50%;
+    #tabla_posiciones{
+        width: 27%;
+    }
+    #goleadores,#asistentes{
+        width: 17%;
+        margin: 0 10px;
     }
     #pie{
         font-size: 2vw;
+    }
+    #pie > a:hover{
+        font-size: 2.3vw;
     }
 }

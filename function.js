@@ -12,14 +12,6 @@ function updateImage(event){
 
 images.forEach(function(image){
     image.addEventListener("click",updateImage);
-    // image[0].addEventListener("click",function(){
-    //     iframe.style.display="none";
-    //     copa.style.display="block";
-    // })
-    // image[1].addEventListener("click",function(){
-    //     copa.style.display="none";
-    //     iframe.style.display="block";
-    // })
 })
 
 // Hacerse Fan
@@ -55,13 +47,13 @@ submit.addEventListener("click",function(){
 //     }
 // });
 
-window.addEventListener('scroll', function()  {
-    let element = document.getElementById('scroll_content');
-    let screenSize = window.innerHeight;
+// window.addEventListener('scroll', function()  {
+//     let element = document.getElementById('scroll_content');
+//     let screenSize = window.innerHeight;
     
-      if(element.getBoundingClientRect().top < screenSize) {
-        element.style.display="flex";
-      } else {
-        element.style.display="none";
-      }
-  });
+//       if(element.getBoundingClientRect().top < screenSize) {
+//         element.style.display="flex";
+//       } else {
+//         element.style.display="none";
+//       }
+//   });

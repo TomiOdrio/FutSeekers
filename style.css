@@ -12,7 +12,7 @@ body{
 .subtitulo{
     text-align: center;
     font-size: 5vw;
-    margin: 20px 0;
+    margin: 50px 0 20px;
 }
 ::-webkit-scrollbar{
     width:6px;
@@ -50,7 +50,7 @@ header{
     justify-content: space-around;
     align-items: center;
 }
-.header_info_pagina,.footer_info_pagina{
+.header_info_pagina{
     display: flex;
     align-items: center;
 }
@@ -198,43 +198,6 @@ main{
     margin: 0;
 }
 
-.cont_ppal{
-    position: sticky;
-    top: 11vw;
-    width: 100%;
-    background-color: rgb(52, 49, 49);
-    display: flex;
-    align-items: center;
-    margin: 10vw 0;
-}
-.cont_scroll_club{
-    display: flex;
-    scroll-snap-type:x mandatory;
-    overflow-x:scroll;
-    width: 89%;
-    margin: 0 auto;
-    padding: 1vw 0;
-}
-.scroll_club img{
-    scroll-snap-align: center;
-    margin: 1vw 0.8vw;
-    width: 10.5vw;
-    max-width: 30px;
-    transition: 0.1s;
-}
-.scroll_club img:hover{
-    transform:scale(1.2)
-}
-.cont_scroll_club::-webkit-scrollbar{
-    height:3px;
-}
-.cont_scroll_club::-webkit-scrollbar-track{
-    background: rgb(52, 49, 49);
-}
-.cont_scroll_club::-webkit-scrollbar-thumb{
-    background:green;
-}
-
 /* FOOTER */
 
 footer{
@@ -245,14 +208,14 @@ footer{
     justify-content: space-evenly;
     align-items: center;
 }
-.footer_info_pagina,.footer_creador,.footer_actualiz{
+.footer_creador,.footer_actualiz{
     text-align: center;
     font-size: 3vw;
     width: 20%;
     color: rgb(103, 180, 106);
     margin: 2vw 0;
 }
-.footer_info_pagina .titulo_pagina{
+.titulo_pagina{
     font-size:3.5vw;
     color: rgb(103, 180, 106);
 }
@@ -341,23 +304,13 @@ footer{
     .club_desc{
         font-size: 1vw;
     }
-    .cont_ppal{
-        top: 5vw;
-        margin: 5vw 0 2vw;
-        justify-content: center;
-    }
-    .cont_scroll_club img{
-        margin: 0 0.3vw;
-    }
     .subtitulo{
         font-size: 2vw;
     }
-    .footer_info_pagina,.footer_creador,.footer_actualiz{
-        font-size: 1vw;
-        margin: 0vw 0;
-    }
-    .footer_info_pagina .titulo_pagina{
+    .cont_footer > h1{
+        width: 33.3%;
         font-size:1.5vw;
+        text-align: center;
     }
     .footer_redes li{
         margin:0 1vw 1vw;
