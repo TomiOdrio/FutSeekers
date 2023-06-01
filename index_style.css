@@ -6,12 +6,12 @@
     border: 0;
     font-size: 3vw;
 }
-
-.contenedor{
+#cont_titulo_index{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    margin: 10vw 0;
 }
 .arrow_down{
     display: flex;
@@ -25,7 +25,7 @@
 }
 #tabla_posiciones{
     display: block;
-    width: 65%;
+    width: 96%;
     height: 50vh;
     margin: 20px auto;
     padding: 0;
@@ -35,14 +35,15 @@
     justify-content: center;
 }
 #goleadores,#asistentes{
-    width: 41%;
+    width: 49%;
+    margin-bottom: 5vw;
 }
 
 #pie{
     width: 90%;
     font-size: 5vw;
     text-align: center;
-    margin: 20px auto;
+    margin: 1.5vw auto;
     color:rgb(0, 0, 0);
 }
 #pie > a{

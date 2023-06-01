@@ -1,5 +1,17 @@
+.form_contacto{
+    background-color: rgba(255, 255, 255, 0.854);
+    width: 70%;
+    margin: 7vw auto;
+    padding: 1vw 2vw;
+    border-radius: 5%;
+}
+.form_contacto h2{
+    text-align: center;
+    font-size: 5vw;
+    margin: 1vw 0;
+}
 .form_contacto form{
-    width: 90%;
+    width: 100%;
     max-width: 600px;
     margin: 0 auto;
     display: flex;

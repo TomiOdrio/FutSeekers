@@ -1,3 +1,12 @@
+#cont_titulo_clubes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+#cont_titulo_clubes h1{
+    margin: 5vw 0;
+}
 .cont_ppal{
     position: sticky;
     top: 11vw;
@@ -107,10 +116,15 @@
     border: 2px solid rgb(39, 90, 21);
 }
 
-#estadisticas{
-    display: block;
-    margin: 0 auto;
-    height: 100vh;
+.tabla{
+    display: none;
+    margin: 0 auto 5vw;
+}
+#plantel,#calendario,#stats{
+    height: 78vh;
+}
+#arqueros{
+    height: 11vh;
 }
 
 

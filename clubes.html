@@ -9,6 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./clubes.css">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -20,9 +24,10 @@
             <div class="header_buttons">
                 <ul class="cont_buttons">
                     <li class="header_button"><a href="./index.html"><i class="fa-solid fa-home"></i><span class="btn_text">Inicio</span></a></li>
+                    <li class="header_button"><a href="./clubes.html"><i class="fa-solid fa-shield"></i><span class="btn_text">Equipos</span></a></li>
                     <li class="header_button"><a href="./contacto.html"><i class="fa-solid fa-phone"></i><span class="btn_text">Contacto</span></a></li>
                     <li class="header_button" id="btn_suscripcion"><a href="#"><i class="fa-solid fa-star"></i><span class="btn_text">Hacete Fan</span></a></li>
-                    <li class="header_button"><a href="#"><img src="./images/versus.png" alt="Modo Versus" id="versus"><span class="btn_text">Modo VS</span></a></li>
+                    <!-- <li class="header_button"><a href="#"><img src="./images/versus.png" alt="Modo Versus" id="versus"><span class="btn_text">Modo VS</span></a></li> -->
                 </ul>
             </div>
 
@@ -49,53 +54,50 @@
     </header>
     
     <main>
-        <h1 class="subtitulo">Elegí tu equipo</h1>
-        
-        
-        <div class="cont_ppal">
-            <div class="cont_scroll_club">
-                <div class="scroll_club"><a target="_self" data-equipo="argentinos" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/argentinos.svg" alt="Argentinos Juniors" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="arsenal" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/arsenal.svg" alt="Arsenal" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="atletico_tucuman" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/atletico_tucuman.svg" alt="Atletico Tucuman" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="banfield" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/banfield.svg" alt="Banfield" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="barracas" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/barracas.svg" alt="Barracas" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="belgrano" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/belgrano.svg" alt="Belgrano" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="iframe_equipo" data-equipo="boca" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQnf_fEzvzc-XS-HMtNv_2bVqo43XOHdMe91UxN3-SpK1nvAcUloc6hu0PNET3S9XXydGo6YK8Xl4L3/pubhtml?gid=638623671&amp,single=true&amp,widget=true&amp,headers=false" title="Boca Juniors" scrolling="no"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/boca.svg" alt="Boca" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="central_córdoba" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/central_cordoba.svg" alt="Central Cordoba" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="colon" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/colon.svg" alt="Colon" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="defensa" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/defensa.svg" alt="Defensa y Justicia" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="estudiantes" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/estudiantes.svg" alt="Estudiantes" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="gimnasia" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/gimnasia.svg" alt="Gimnasia" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="godoy_cruz" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/godoy_cruz.svg" alt="Godoy Cruz" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="huracan" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/huracan.svg" alt="Huracan" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="independiente" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/independiente.svg" alt="Independiente" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="instituto" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/instituto.svg" alt="Instituto" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="lanus" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/lanus.svg" alt="Lanus" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="newells" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/newells.svg" alt="Newells" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="platense" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/platense.svg" alt="Platense" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="racing" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/racing.svg" alt="Racing" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="river" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/river.svg" alt="River" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="rosario_central" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/rosario_central.svg" alt="Rosario Central" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="iframe_equipo" data-equipo="san_lorenzo" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR-q7Ulb_GBfS1WZvYGAMhqAjfK0u_vYhxXW5sXRYHMnvHSisUg-wMHfa4WVe0vcpOevuU9cmYgN_aP/pubhtml?gid=638623671&amp,single=true&amp,widget=true&amp,headers=false" title="San Lorenzo" scrolling="no"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/san_lorenzo.svg" alt="San Lorenzo" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="sarmiento" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/sarmiento.svg" alt="Sarmiento" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="talleres" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/talleres.svg" alt="Talleres" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="tigre" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/tigre.svg" alt="Tigre" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="union" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/union.svg" alt="Union" class="escudo_club"></a></div>
-                <div class="scroll_club"><a target="_self" data-equipo="velez" href="#"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/velez.svg" alt="Velez" class="escudo_club"></a></div>
-            </div>
-        </div>
-        <div class="escudo">
-            <i class="fa-solid fa-shield" id="logo_shield"></i>
-            <img src="" alt="Escudo equipo elegido" class="oculto" id="escudo_elegido">
-        </div>
 
-        <!-- <div class="cont_club" id="marco">
-            <img src="https://www.ole.com.ar/img/escudos/futbolPrimera/san_lorenzo.svg" alt="San Lorenzo" class="club_img" id="imagen_club">
-            <div class="cuerpo_club">
-                <h2 class="club_nombre">C.A. San Lorenzo de Almagro</h2>
-                <p class="club_desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam repellat sit numquam natus magni veritatis</p>
+        <div class="fondo">
+            <div id="cont_titulo_clubes">
+                <h1 class="subtitulo">Elegí tu equipo...</h1>
+                <div class="cont_ppal">
+                    <div class="cont_scroll_club">
+                        <div class="scroll_club" id="argentinos"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/argentinos.svg" alt="Argentinos Juniors" class="escudo_club"></div>
+                        <div class="scroll_club" id="arsenal"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/arsenal.svg" alt="Arsenal" class="escudo_club"></div>
+                        <div class="scroll_club" id="atletico_tucuman"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/atletico_tucuman.svg" alt="Atletico Tucuman" class="escudo_club"></div>
+                        <div class="scroll_club" id="banfield"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/banfield.svg" alt="Banfield" class="escudo_club"></div>
+                        <div class="scroll_club" id="barracas"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/barracas.svg" alt="Barracas" class="escudo_club"></div>
+                        <div class="scroll_club" id="belgrano"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/belgrano.svg" alt="Belgrano" class="escudo_club"></div>
+                        <div class="scroll_club" id="boca"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/boca.svg" alt="Boca" class="escudo_club"></div>
+                        <div class="scroll_club" id="central_cordoba"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/central_cordoba.svg" alt="Central Cordoba" class="escudo_club"></div>
+                        <div class="scroll_club" id="colon"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/colon.svg" alt="Colon" class="escudo_club"></div>
+                        <div class="scroll_club" id="defensa"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/defensa.svg" alt="Defensa y Justicia" class="escudo_club"></div>
+                        <div class="scroll_club" id="estudiantes"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/estudiantes.svg" alt="Estudiantes" class="escudo_club"></div>
+                        <div class="scroll_club" id="gimnasia"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/gimnasia.svg" alt="Gimnasia" class="escudo_club"></div>
+                        <div class="scroll_club" id="godoy_cruz"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/godoy_cruz.svg" alt="Godoy Cruz" class="escudo_club"></div>
+                        <div class="scroll_club" id="huracan"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/huracan.svg" alt="Huracan" class="escudo_club"></div>
+                        <div class="scroll_club" id="independiente"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/independiente.svg" alt="Independiente" class="escudo_club"></div>
+                        <div class="scroll_club" id="instituto"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/instituto.svg" alt="Instituto" class="escudo_club"></div>
+                        <div class="scroll_club" id="lanus"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/lanus.svg" alt="Lanus" class="escudo_club"></div>
+                        <div class="scroll_club" id="newells"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/newells.svg" alt="Newells" class="escudo_club"></div>
+                        <div class="scroll_club" id="platense"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/platense.svg" alt="Platense" class="escudo_club"></div>
+                        <div class="scroll_club" id="racing"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/racing.svg" alt="Racing" class="escudo_club"></div>
+                        <div class="scroll_club" id="river"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/river.svg" alt="River" class="escudo_club"></div>
+                        <div class="scroll_club" id="rosario_central"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/rosario_central.svg" alt="Rosario Central" class="escudo_club"></div>
+                        <div class="scroll_club" id="san_lorenzo"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/san_lorenzo.svg" alt="San Lorenzo" class="escudo_club"></div>
+                        <div class="scroll_club" id="sarmiento"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/sarmiento.svg" alt="Sarmiento" class="escudo_club"></div>
+                        <div class="scroll_club" id="talleres"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/talleres.svg" alt="Talleres" class="escudo_club"></div>
+                        <div class="scroll_club" id="tigre"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/tigre.svg" alt="Tigre" class="escudo_club"></div>
+                        <div class="scroll_club" id="union"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/union.svg" alt="Union" class="escudo_club"></div>
+                        <div class="scroll_club" id="velez"><img src="https://www.ole.com.ar/img/escudos/futbolPrimera/velez.svg" alt="Velez" class="escudo_club"></div>
+                    </div>
+                </div>
+                <div class="escudo">
+                    <i class="fa-solid fa-shield" id="logo_shield"></i>
+                    <img src="" alt="Escudo equipo elegido" class="oculto" id="escudo_elegido">
+                </div>
+                <h1 class="subtitulo">...Y mirá sus estadísticas</h1>
+                <h1 class="subtitulo">aviso! solo funcionan Boca y San Lorenzo por ahora :)</h1>
             </div>
-        </div> -->
+        </div>
 
         <!-- <div class="club_nav_reducido" id="scroll_content">
             <img src="https://www.ole.com.ar/img/escudos/futbolPrimera/san_lorenzo.svg" alt="San Lorenzo" class="club_img" id="imagen_club_reducido">
@@ -110,19 +112,23 @@
             </div>
         </div>
 
-        <iframe id="estadisticas" name="iframe_equipo" src="" frameborder="0"></iframe>
+        <iframe id="plantel" class="tabla" name="plantel" src="" frameborder="0"></iframe>
+        <iframe id="calendario" class="tabla" name="calendario" src="" frameborder="0"></iframe>
+        <iframe id="stats" class="tabla" name="stats" src="" frameborder="0"></iframe>
+        <iframe id="arqueros" class="tabla" name="arqueros" src="" frameborder="0"></iframe>
 
-        <div class="cont_selector_modelos">
-            <div class="zona_campo">
-                <img src="./images/cancha.png" alt="Zonas" class="zonas_img">
-                <div class="cont_zonas">
-                    <div class="zona"></div>
-                    <div class="zona"></div>
-                    <div class="zona"></div>
+        <div class="fondo">
+            <div class="cont_selector_modelos">
+                <div class="zona_campo">
+                    <img src="./images/cancha.png" alt="Zonas" class="zonas_img">
+                    <div class="cont_zonas">
+                        <div class="zona"></div>
+                        <div class="zona"></div>
+                        <div class="zona"></div>
+                    </div>
                 </div>
             </div>
         </div>
-        
 
     </main>
 
