@@ -61,7 +61,7 @@
     margin-bottom: 2vw;
 }
 .imgCarousel:hover{
-    width: 22vw;
+    width: 20vw;
     border: 0.1px solid rgb(39, 90, 21);
 }
 #descripcion_competencia{
@@ -175,13 +175,14 @@
         justify-content: center;
     }
     #tabla_posiciones{
-        width: 28%;
+        width: 41%;
     }
-    .tablas_jug{
-        width: 35%;
+    #goleadores{
+        width: 29vw;
+        margin: 0;
     }
-    #goleadores,#asistentes{
-        width: 50%;
+    #asistentes{
+        width: 25vw;
         margin: 0;
     }
     #pie{
