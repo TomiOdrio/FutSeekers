@@ -1,20 +1,36 @@
-// Imagen Preview
+// LOADER
+
+let pantalla_carga=document.getElementById("pantalla_carga");
+let modelos = document.getElementById("cont_selector_modelos");
+
+window.onload = function() {
+    pantalla_carga.style.visibility="hidden";
+    pantalla_carga.style.opacity="0";
+}
+
+// IMAGEN PREVIEW
 
 let images=Array.from(document.getElementsByClassName("imgCarousel"));
 let mainPhoto=document.getElementById("mainPhoto");
 let iframe=document.getElementById("tabla_posiciones");
 let copa=document.getElementById("tabla_copa");
+let texto_comp=document.getElementById("descripcion_competencia");
 
-function updateImage(event){
-    let image=event.target;
-    mainPhoto.src=image.src;
-}
-
-images.forEach(function(image){
-    image.addEventListener("click",updateImage);
+images.forEach(function(image,index){
+    image.addEventListener("click",function updateImage(event){
+        let image=event.target;
+        mainPhoto.src=image.src;
+        let comp=images[index].getAttribute("id");
+        if(comp=="liga_arg"){
+            texto_comp.innerHTML="La Liga Profesional de Fútbol es la máxima competcición del fútbol argentino. En ella actualmente compiten 28 equipos."
+        }
+        else{
+            texto_comp.innerHTML="La Copa Argentina es una competencia local de eliminación directa en la que participan equipos de las cinco categorías de fútbol profesional."
+        }
+    });
 })
 
-// Hacerse Fan
+// HACERSE FAN
 
 let boton=document.getElementById("btn_suscripcion");
 let form=document.getElementById("borroso");
@@ -57,3 +73,13 @@ submit.addEventListener("click",function(){
 //         element.style.display="none";
 //       }
 //   });
+
+//CARRUSEL CITAS
+
+$(document).ready(function() {
+    //Set the carousel options
+    $('#quote-carousel').carousel({
+      pause: true,
+      interval: 4000,
+    });
+});

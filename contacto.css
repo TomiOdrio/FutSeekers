@@ -26,3 +26,32 @@
 #form_alert{
     margin: 2vw auto;
 }
+
+@media(min-width:600px){
+    .form_contacto{
+        width: 35%;
+        margin: 4vw auto;
+        padding: 1vw 1vw;
+    }
+    .form_contacto h2{
+        text-align: center;
+        font-size: 2vw;
+        margin: 1vw 0;
+    }
+    .form_contacto form{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form_contacto textarea{
+        max-height: 10vw;
+        min-height: 5vw;
+    }
+    #form_alert{
+        margin: 2vw auto;
+    }
+}

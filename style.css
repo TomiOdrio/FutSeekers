@@ -38,9 +38,9 @@ body{
 header{
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 5;
     width: 100%;
-    background-color: rgb(52, 49, 49);
+    background-color: rgba(52, 49, 49, 0.863);
     border-bottom: 0.1px solid black;
 }
 .cont_header{
@@ -54,11 +54,11 @@ header{
 }
 .logo{
     margin: 1.5vw;
-    width: 8vw;
+    width: 10vw;
 }
 .titulo_pagina{
     font-size: 5vw;
-    color:rgb(12, 132, 12);
+    color:rgb(65, 158, 65);
     margin: 0;
 }
 .header_buttons{
@@ -110,7 +110,7 @@ header{
     top:0;
     width:100vw;
     height:100vh;
-    z-index: 3;
+    z-index: 5;
     backdrop-filter: blur(2px);
 }
 #suscripcion{
@@ -120,7 +120,7 @@ header{
     transform:translate(-50%,-50%);
     width: 85vw;
     border: 0.1px solid black;
-    background: linear-gradient(245.59deg, #5db16b 0%, #38703d 40%, #18511d 60%);
+    background: linear-gradient(245.59deg, #2a8439 0%, #60b968 40%, #86ca8c 60%);
 }
 .cross_icon{
     margin: 0 2vw;
@@ -130,12 +130,12 @@ header{
     cursor: pointer;
 }
 #suscripcion form{
-    width: 90%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
 }
 #suscripcion .subtitulo{
     width:90%;
@@ -153,6 +153,7 @@ header{
     font-size: 3vw;
 }
 #check{
+    margin-top: 0;
     margin-right: 1vw;
     cursor: pointer;
 }
@@ -166,6 +167,72 @@ header{
     color: white;
 }
 
+#pantalla_carga{
+    background-color: #7acf88;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    z-index: 5 !important;
+    transition: all 1s ease;
+    width: 100vw;
+    height: 100vh;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #FFF #FFF transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent #5eb565 #5eb565;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+  }
+  .loader::before {
+    width: 32px;
+    height: 32px;
+    border-color: #FFF #FFF transparent transparent;
+    animation: rotation 1.5s linear infinite;
+  }
+      
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
 /* MAIN */
 
 .fondo{
@@ -173,30 +240,6 @@ header{
     padding: 2vw 0;
     border-bottom: 1px solid rgb(6, 40, 6);
     border-top: 1px solid rgb(6, 40, 6);
-}
-.cont_club{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5vw auto;
-    padding: 2vw .5vw;
-    background-color: rgb(52, 49, 49);
-    color: white;
-    border-radius: 15px 0 15px 0;
-    box-shadow: 3vw 3vw 0 0 rgba(0,0,0,0.4);
-}
-.club_img{
-    width: 30%;
-    max-width: 8vw;
-    margin-right:1vw;
-}
-.club_nombre{
-    font-size: 3vw;
-}
-.club_desc{
-    font-size: 2vw;
-    margin: 0;
 }
 
 /* FOOTER */
@@ -216,7 +259,7 @@ footer{
     color: rgb(103, 180, 106);
     margin: 2vw 0;
 }
-.titulo_pagina{
+.cont_footer .titulo_pagina{
     font-size:3.5vw;
     color: rgb(103, 180, 106);
 }
@@ -253,20 +296,20 @@ footer{
         width: 4vw;
     }
     .titulo_pagina{
-        font-size: 3vw;
+        font-size: 2vw;
     }
     .header_buttons{
         font-size: 2.5vw;
     }
     .cont_buttons{
-        width: 38vw;
+        width: 40vw;
     }
     .header_button{
         font-size: 1.5vw;
     }
-    #versus{
+    /* #versus{
         width: 2vw;
-    }
+    } */
     .btn_text{
         display: inline;
     }
@@ -296,25 +339,17 @@ footer{
         margin: 2vw 0;
         font-size: 1vw;
     }
-    .cont_club{
-        width: 20vw;
-    }
-    .club_nombre{
-        font-size: 1.5vw;
-    }
-    .club_desc{
-        font-size: 1vw;
-    }
     .subtitulo{
         font-size: 2vw;
     }
-    .cont_footer > h1{
+    .cont_footer > h1, .cont_footer .titulo_pagina{
         width: 33.3%;
         font-size:1.5vw;
         text-align: center;
+        margin: 1.5vw;
     }
     .footer_redes li{
-        margin:0 1vw 1vw;
+        margin:0 1vw 0vw;
         font-size: 2vw;
     }
 }
