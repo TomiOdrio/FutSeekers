@@ -259,9 +259,11 @@ footer{
     color: rgb(103, 180, 106);
     margin: 2vw 0;
 }
-.cont_footer .titulo_pagina{
+.cont_footer > a{
     font-size:3.5vw;
     color: rgb(103, 180, 106);
+    text-decoration: none;
+    text-align: center;
 }
 .footer_creador a{
     text-decoration: none;
@@ -269,7 +271,10 @@ footer{
     transition: 0.1s;
 }
 .footer_creador a:hover{
-    color: rgb(60, 125, 63);
+    color: rgba(169, 255, 169, 0.799);
+}
+.cont_footer > a:hover{
+    color: rgba(169, 255, 169, 0.799);
 }
 .footer_redes{
     display: flex;
@@ -340,16 +345,21 @@ footer{
         font-size: 1vw;
     }
     .subtitulo{
-        font-size: 2vw;
+        font-size: 1.8vw;
     }
-    .cont_footer > h1, .cont_footer .titulo_pagina{
+    .cont_footer > h1{
         width: 33.3%;
-        font-size:1.5vw;
+        font-size:1.2vw;
         text-align: center;
-        margin: 1.5vw;
+        margin: 1vw;
+    }
+    .cont_footer > a{
+        width: 33.3%;
+        margin: 1vw;
+        font-size:1.2vw;
     }
     .footer_redes li{
         margin:0 1vw 0vw;
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 }

@@ -183,7 +183,7 @@
     }
 
     .cont_selector_modelos{
-        margin: 2vw 0;
+        margin: 2vw 0 1vw;
     }
     .cont_selector_modelos p{
         margin: 0;
@@ -208,7 +208,7 @@
         height: 6vh;
     }
     #texto_zona{
-        font-size:2vw;
+        font-size:1.5vw;
         margin: 0;
     }
     #arqueros{
