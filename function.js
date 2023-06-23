@@ -43,7 +43,9 @@ cross.addEventListener("click",function(){
     form.classList.toggle("oculto");
 })
 submit.addEventListener("click",function(){
-    form.classList.toggle("oculto");
+    window.addEventListener("load",function(){
+        form.classList.toggle("oculto");
+    })
 })
 
 // Aparecer nav club
